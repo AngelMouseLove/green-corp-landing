@@ -214,7 +214,7 @@ footer {
   margin-right: 80px;
 }
 
-h3 {
+.footer__group h3 {
   font-size: 16px;
   opacity: 0.7;
   margin-bottom: 30px;
@@ -237,15 +237,14 @@ h3 {
 }
 
 
-/* рабочая зона */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
 }
 
 .card {
   padding: 35px 40px 25px 40px;
-  margin-left: 50px;
   border: 1px solid #D9E4E6;
   border-radius: 5px;
 }
@@ -276,6 +275,64 @@ p {
 .text_logo {
   color: #ad1714;
 }
+
+.features__border {
+  margin: 50px 0px 50px 0px;
+  border-bottom: 1px solid #E6EAF4;
+}
+
+/* рабочая зона */
+.features__feedback {
+  display: flex;
+  flex-direction: row;
+}
+
+.features__feedback-left {
+  margin-right: 10px;
+}
+
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right {
+  display: flex;
+
+}
+
+.features__box {
+  padding: 30px 40px 25px 40px;
+  color: white;
+  border-radius: 25px;
+}
+
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+
+.fa-star {
+  color: #ff7039;
+}
+
 
 @media (max-width: 720px) {
   header {
@@ -339,6 +396,33 @@ p {
     margin-top: 50px;
   }
 
+  .features__feedback {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+
+  .features__box h3 {
+    font-size: 36px;
+  }
+
+  .features__savings-box {
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+
+  .features__feedback-left {
+    margin-right: 0px;
+  }
+
+  .features__feedback-right {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media (max-width: 1024px) {
@@ -373,4 +457,31 @@ p {
     margin-top: 50px;
   }
 
+  .features__feedback {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features__feedback-left h2 {
+    font-size: 36px;
+  }
+
+  .features__box h3 {
+    font-size: 36px;
+  }
+
+  .features__feedback-left {
+    margin-right: 0px;
+  }
+
+  .features__feedback-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .features__savings-box {
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
 }
