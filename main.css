@@ -393,6 +393,18 @@ p {
   margin-left: 5px;
 }
 
+/* анимация */
+.orb-canvas {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 0;
+}
+
+.about {
+  position: relative;
+}
+
 /* p .promo__text {
   content: '*';
   width: 10px;
