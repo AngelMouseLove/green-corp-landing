@@ -7,10 +7,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  background-color: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: 0.1;
+  /* transition:ease - 0.25s; */
+  /* transition-timing-function: ease;
+  transition-delay: 0.25s; */
+  transition: 0.25s ease;
   top: 0;
   z-index: 1;
+}
+
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 
 .header__logo {
@@ -83,7 +94,8 @@ header {
   align-items: center;
   justify-content: space-around;
   padding-bottom: 115px;
-  padding-top: 115px;
+  padding-top: 200px;
+
 }
 
 
@@ -265,12 +277,12 @@ p {
   align-items: center;
 }
 
-.card__logo .fa-chart-line{
-  color:#22a030;
+.card__logo .fa-chart-line {
+  color: #22a030;
 }
 
-.fa-solar-panel{
-  color:#ffb406;
+.fa-solar-panel {
+  color: #ffb406;
 }
 
 .fa-angle-right {
@@ -365,7 +377,7 @@ p {
   line-height: 22px;
   font-weight: 500;
   border-radius: 25px;
- 
+
 }
 
 
